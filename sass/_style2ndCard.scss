@@ -1,0 +1,92 @@
+@use 'variables' as v;
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+.thanks{
+    display: none;
+    color: v.$White;
+    background-color: v.$DarkBlue;
+    // border: 1px solid red;
+    margin: 9.563rem auto 2.5rem;
+    height: 24.5rem;
+    width: 20.563rem;
+    border-radius: 0.625rem;
+
+    &__select{
+        padding: 1.5rem 0;
+        
+        
+    }
+   
+
+}
+
+.selectText{
+
+    text-align: center;
+    color: v.$Orange;
+    background-color: v.$MediumGrey2;
+    padding: 0.5rem 0;
+    margin-left: 5.25rem;
+    width: 10.625rem;
+    height: 2.25rem;
+    border-radius: 3.125rem;
+    font-size: 0.9rem;
+    
+}
+
+.thankText{
+    font-weight: 700;
+    color: v.$White;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: -1.563rem;
+}
+
+.imgThank{
+    // border: 1px solid red;
+    width: 9.375rem;
+    display: block;
+    margin: auto;
+}
+
+.pText{
+    text-align: center;
+    line-height: 1.5rem;
+    margin-bottom: -0.625rem;
+
+}
+
+.backBtn{
+    margin: 1.5rem; 
+    
+    // border: 1px solid red;
+    background-color: v.$Orange;
+    width: 17.5rem;
+    height: 2.375rem;
+    border-radius: 1.25rem;
+    font-family: 'Overpass', sans-serif; 
+    color: v.$White;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.125rem;
+    border: none;
+
+    &:hover{
+        cursor: pointer;
+        background-color: v.$White;
+        color: v.$Orange;
+    }
+}
+
+
+.attribution { 
+    font-size: 0.688rem; 
+    text-align: center; 
+    color: v.$White;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+

@@ -1,0 +1,124 @@
+@use 'variables' as v;
+@use 'style2ndCard';
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Overpass', sans-serif; 
+    background-color: v.$VeryDarkBlue;
+    
+}
+
+.cardContainer{
+    
+    color: v.$White;
+    background-color: v.$DarkBlue;
+    // border: 1px solid red;
+    margin: 9.563rem auto 2.5rem;
+    height: 22.625rem;
+    width: 20.563rem;
+    border-radius: 0.625rem;
+
+    &__star{
+        // border: 1px solid orange;
+        margin-left: 1.25rem;
+        
+        
+    }
+
+    &__texts{
+        margin: 8px 26px 14px 24px;
+    }
+
+    
+
+    &__button{
+        margin: 1.5rem; 
+        // border: 1px solid red;
+        background-color: v.$Orange;
+        width: 17.5rem;
+        height: 2.813rem;
+        border-radius: 1.25rem;
+        font-family: 'Overpass', sans-serif; 
+        color: v.$White;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.125rem;
+        border: none;
+
+        &:hover{
+            cursor: pointer;
+            background-color: v.$White;
+            color: v.$Orange;
+        }
+    }
+}
+
+.imgStar{
+    margin-top: 1.25rem;
+    background-color: v.$VeryDarkBlue;
+    border-radius: 50%;
+    padding: 0.625rem;
+    // border: 1px solid red;
+}
+
+h1{
+    margin-bottom: 1.25rem;
+}
+
+p{
+    color: v.$LightGrey; 
+    margin-bottom: 1.25rem;
+    font-size: 0.938rem;
+}
+
+.buttonsNumbers{
+
+    margin-left: 1.125rem;
+    margin-bottom: 0.625rem;
+    color: v.$LightGrey; 
+    background-color: v.$DarkBlue2;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: v.$White;
+    border: none;
+    
+    &:hover{
+        cursor: pointer;
+        background-color: v.$LightGrey;
+    }
+
+    &:focus{
+        cursor: pointer;
+        background-color: v.$Orange;
+    }
+    
+}
+
+.attribution { 
+    
+    // border: 1px solid red;
+    font-size: 0.688rem; 
+    text-align: center; 
+    color: v.$White;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+// DESKTOP
+
+@media (min-width: 600px){
+    
+    .cardContainer, .thanks{
+        width: 25.75rem;
+        height: 25.75rem;
+        padding: 2.125rem;
+    }   
+}
